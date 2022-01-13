@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'student_managemet_app/fontawesome-free-5.15.4-web/css/all.css '%}">
+    <link rel="stylesheet" href="{% static 'student_management_app/css/log_in.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+</head>
+<body>
+    <div class="login_container" id="particles-js">
+        <div class="login_content">
+            <div class="login_content_image"><img src="{% static 'student_management_app/img/loginpic.jpg'%}"></div>
+            <div class="login_form_container">
+                <h1>welcome</h1>
+                <p>Faculty of Computers and Artificial Intelligence</p>
+                <form action="/doLogin" method="post">
+					{% csrf_token %}
+                    <input type="email" placeholder="Email" class="inputtext" name="email">
+                    <input type="password" placeholder="Password" class="inputtext" name="password">
+                    <button type="submit" value="Log In" class="btn_login">Log In</button>
+                    <input type="checkbox" value="Rememberme" id="Rememberme">
+                    <label for="Rememberme" class="rememberme">Remember me</label>
+                    <div class="login_form_container_links">
+                        <a href="#">Help</a>
+                    </div>
+					{% if messages%}	
+					<div>
+						{% for message in messages %}
+						{% if message.tags == 'error' %}
+						<span style="position: absolute; top: 60px;color: rgb(67, 126, 235); font-family: 'Poppins', sans-serif;">{{message}}</span>
+						{% endif %}
+						{% endfor %}
+					</div>
+					{% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'student_management_app/js/particles.min.js'%}"></script>
+    <script src="{% static 'student_management_app/js/app.js'%}"></script>
+</body>
+</html>

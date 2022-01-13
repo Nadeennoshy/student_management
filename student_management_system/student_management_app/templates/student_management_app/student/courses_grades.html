@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Grades</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}">
+    <link rel="stylesheet" href="{% static 'student_management_app/css/coursegrades.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+    
+</head>
+<body>
+    <div class="course_grades_page_container">
+        <div class="btn_back_home"><a href="{% url 'student_home' %}"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="course_grades_page_content">
+            <h2>Course Grades</h2>
+            <table class="table" style="width:80%; margin: auto; color:#fff; text-align:center; margin-bottom: 1rem;">
+                <tr style="background: linear-gradient(
+                    90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%); color:#fff;">
+                    <td>Spring  2020-2021</td>
+                </tr>
+            </table>
+            <table class="table" style="width:80%; margin: auto; color:#fff; text-align:center; margin-bottom: 1rem;">
+                <thead>
+                    <tr style="background: linear-gradient(
+                        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%); color:#fff; padding-bottom:5%; font-family: 'Montserrat', sans-serif; height: 2rem;">
+                    <th scope="col">Course</th>
+                    <th scope="col">Grade</th>
+                    <th scope="col">Degree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #fff;color: rgb(35, 35, 35);">
+                    <td>Computer Graphics</td>
+                    <td>A+</td>
+                    <td>100</td>
+                    </tr>
+                    <tr style="background-color: #fff;color: rgb(35, 35, 35);">
+                    <td>Artificial Intelligence</td>
+                    <td>A+</td>
+                    <td>100</td>
+                    </tr>
+                    <tr style="background-color: #fff;color: rgb(35, 35, 35);">
+                        <td>Internet Technology</td>
+                        <td>A+</td>
+                        <td>100</td>
+                    </tr>
+                    <tr style="background-color: #fff;color:rgb(35, 35, 35);">
+                        <td>Computer Architecture</td>
+                        <td>A+</td>
+                        <td>100</td>
+                    </tr>
+                    <tr style="background-color: #fff;color:rgb(35, 35, 35);">
+                        <td>Algorithms</td>
+                        <td>A+</td>
+                        <td>100</td>
+                    </tr>
+                    <tr style="background-color: #fff;color:rgb(35, 35, 35);">
+                        <td>Securing Networks</td>
+                        <td>A+</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table" style="width:80%; margin: auto; color:#fff; text-align:center; margin-bottom: 3rem;">
+                <tr style="background-color: #fff;color:rgb(35, 35, 35);">
+                    <td>Term GPA 4</td>
+                    <td>GPA 4</td>
+                    <td>Attempted Hours 19.0</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>
+</html>

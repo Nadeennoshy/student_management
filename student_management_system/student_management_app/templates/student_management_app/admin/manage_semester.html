@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Semester</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}">
+    <link rel="stylesheet" href="{% static 'student_management_app/css/managesemester.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+</head>
+<body>
+    <div class="managesemester_Page_container">
+        <div class="btn_back_home"><a href="{% url 'admin_home' %}"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="managesemester_Page_content">
+            <h2>Semester Details</h2>
+            <table class="table" style="width:80%; margin: auto; color:#fff; text-align:center; margin-bottom: 3rem;">
+                <thead>
+                    <tr style="background: linear-gradient(
+                        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%); color:#fff; padding-bottom:5%; font-family: 'Montserrat', sans-serif; height: 2rem;">
+                    <th scope="col">ID</th>
+                    <th scope="col">Semester Name</th>
+                    <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for semester in semesters %}
+                    <tr style="background-color: #fff;color: rgb(35, 35, 35);">
+                    <td>{{semester.id}}</td>
+                    <td>{{semester.semester_name}}</td>
+                    <th scope="row" style="width: 200px;">
+                        <a href="/edit_semester/{{semester.id}}"><button type="submit">Edit</button></a>
+                    </th>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

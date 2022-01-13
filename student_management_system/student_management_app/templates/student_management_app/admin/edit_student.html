@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}">
+    <link rel="stylesheet" href="{% static 'student_management_app/css/Add Staff.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+</head>
+<body>
+    <div class="Add_Staff_Page_container" style="height: 1000px;">
+        <div class="btn_back_home"><a href="{% url 'admin_home' %}"><i class="fas fa-arrow-left"></i></a></div>
+
+        <div class="Add_Staff_Page_content">
+            <form action = "/edit_student_save" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h2 class="header">Edit Student</h2>
+                <input type="email" name="email" placeholder="Email address" value="{{student.admin.email}}">
+                <input type="text" name="first_name" id="input1" placeholder="Frist Name" value="{{student.admin.first_name}}">
+                <input type="text" name="last_name" id="input1" placeholder="Last Name" value="{{student.admin.last_name}}">
+                <input type="text" name="username" id="input1" placeholder="User Name" value="{{student.admin.username}}">
+                <input type="hidden" name="student_id" value="{{student.admin.id}}">
+                <input type="text" name="address" id="input1" placeholder="Address" value="{{student.address}}">
+                <center>
+                <select name="semester" style="width: 50%;min-width: 15ch;
+                max-width: 55ch;border: none; padding: 0.80em 1em; margin-bottom: 20px;">
+                    {% for semester in semesters %}
+                      <option value="{{semester.id}}" {% if semester.id == student.semester_id.id %} selected {% endif %}>{{semester.semester_name}}</option>
+                    {% endfor %}
+                </select><br>
+                </center>
+                <center>
+                <select name="gender" style=" width: 20rem; height: 40px;
+                max-width: 45ch;border: none; padding: 0.80em 1em;">
+                    <option {% if student.gender == "Male" %} selected {% endif %}>Male</option>
+                    <option {% if student.gender == "Female" %} selected {% endif %}>Female</option>
+                </select> 
+                </center>
+                <input type="date" name="session_start" placeholder="Session Start Year" value='{{student.session_start_year|date:"Y-m-d"}}'>
+                <input type="date" name="session_end" placeholder="Session End Year" value="{{student.session_end_year|date:'Y-m-d'}}">
+                <input type="file" name="profile_pic" placeholder="profile picture">
+                <div class="Add_Staff_Page_content_btns">
+                    <button type="submit">Save Student</button>    
+                    <button type="reset">cancel</button>
+                </div>
+            </form>
+            {% if messages%}
+            {% for message in messages %}
+            {% if message.tags == 'error' %}	
+            <div style="position: absolute; top: 60px;color: rgb(67, 126, 235); font-family: 'Poppins', sans-serif;">{{message}}</div>	
+            {% endif %}
+            {% if message.tags == 'success' %}
+            <div style="position: absolute; top: 60px;color: rgb(67, 126, 235); font-family: 'Poppins', sans-serif;">{{message}}</div>
+            {% endif %}	
+            {% endfor %}
+            {% endif %}    
+        </div>
+    </div>
+</body>
+</html>

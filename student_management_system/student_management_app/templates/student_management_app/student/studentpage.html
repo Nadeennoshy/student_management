@@ -1,0 +1,317 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}">
+    <link rel="stylesheet" href="{% static 'student_management_app/css/home_student.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+    
+</head>
+<body>
+    <div class="home-container">
+        <div class="home-content">
+
+            <!--image-->
+            <div class="home-circle-image">
+                <div class="home-image">
+                    <img src="{% static 'student_management_app/img/student-pic.jpg'%}"> <!--image from backend-->
+                </div>
+            </div>
+
+            <!--setting-->
+            <div class="home-setting">
+                <div>
+                    <h3 class="home-setting-h3">{{student.admin.first_name}}</h3>
+                </div>
+                <div class="home-setting-icons">
+                    <div class="home-setting-icons-icon"><a href="{% url 'logout' %}"><i class="fas fa-power-off"></i></a></div>
+                    <div class="home-setting-icons-icon"><a href="#"><i class="fas fa-key"></i></a></div>
+                </div>
+            </div>
+
+            <!--Personal Data-->
+            <div class="home-PersonalData">
+                <div class="home_text">Personal Data</div>
+                <a href="{% url 'student_account' %}">
+                    <div class="home-circle"> 
+                        <div class="home-circle-inside">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Courses Grades-->
+            <div class="home-CoursesGrades">
+               <div class="home_text">Courses Grades</div>
+               <a href="{% url 'courses_grades' %}">
+                    <div class="home-circle"> 
+                        <div class="home-circle-inside">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+           
+            <!--Study Timetable-->
+            <div class="home-StudyTimetable">
+                <div class="home_text">Study Timetable</div>
+                <a href="{% url 'student_time_table' %}">
+                    <div class="home-circle"> 
+                        <div class="home-circle-inside">
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--University Mail-->
+            <div class="home-UniversityMail">
+               <div class="home_text">University Mail</div>
+               <a href="{% url 'university_mail' %}">
+                    <div class="home-circle"> 
+                        <div class="home-circle-inside">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!--Academic Registration-->
+            <div class="home-AcademicRegistration">
+                <div class="home_text">Academic Registration</div>
+                <a href="{% url 'academic_registration' %}">
+                    <div class="home-circle"> 
+                        <div class="home-circle-inside">
+                            <i class="far fa-edit"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Identity Cards-->
+            <div class="home-IdentityCards">
+                <a href="{% url 'identity_cards' %}">
+                    <div class="home-circle"> 
+                        <div class="home-circle-inside">
+                            <i class="far fa-address-card"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="home_text">Identity Cards</div>
+            </div>
+            
+            <!--Exams Timetable-->
+            <div class="home-ExamsTimetable">
+                <a href="{% url 'examstable' %}">
+                    <div class="home-circle"> 
+                        <div class="home-circle-inside">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="home_text">Exams Timetable</div>
+            </div>
+            
+            <!--Questionnaire-->
+            <div class="home-Questionnaire">
+                <a href="#">
+                    <div class="home-circle">
+                        <div class="home-circle-inside">
+                            <i class="fas fa-question"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="home_text">Questionnaire</div>
+            </div>
+
+            <!--Books List-->
+            <div class="home-BooksList">
+                <a href="#">
+                    <div class="home-circle">
+                        <div class="home-circle-inside">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="home_text">Books List</div>
+            </div>
+
+            <!--Desires-->
+            <div class="home-Desires">
+                <a href="#">
+                    <div class="home-circle">
+                        <div class="home-circle-inside">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="home_text">Desires</div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}">
+    <link rel="stylesheet" href="{% static 'student_management_app/css/home.css'%}">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css"> 
+    
+</head>
+<body>
+    <div class="home-container">
+        <div class="home-content">
+
+            <!--image-->
+            <!-- <div class="home-circle-image">
+                <div class="home-image">
+                    <img src="{% static 'student_management_app/img/student-pic.jpg'%}"> <!--image from backend-->
+                <!-- </div>
+            </div> --> 
+
+            <!--Personal Data-->
+            <!-- <div class="home-circle home-PersonalData"> 
+                <div class="home-circle-inside">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div> -->
+
+            <!--Courses Grades-->
+            <!-- <div class="home-circle home-CoursesGrades"> 
+                <div class="home-circle-inside">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+            </div> -->
+           
+            <!--Study Timetable-->
+            <!-- <div class="home-circle home-StudyTimetable"> 
+                <div class="home-circle-inside">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+            </div> -->
+
+            <!--University Mail-->
+            <!-- <h1>university mail</h1>
+            <div class="home-circle home-UniversityMail"> 
+                <div class="home-circle-inside">
+                    <i class="far fa-envelope"></i>
+                </div>
+            </div> -->
+            
+            <!--Academic Registration-->
+            <!-- <div class="home-circle home-AcademicRegistration"> 
+                <div class="home-circle-inside">
+                    <i class="far fa-edit"></i>
+                </div>
+            </div> -->
+
+            <!--Identity Cards--> 
+            <!-- {% url 'student_apply_leave' as student_apply_leave %}
+            <div class="home-circle home-IdentityCards"> 
+                <div class="home-circle-inside">
+                    <a href="{{student_apply_leave}}" {% if request.path == student_apply_leave %} active {% endif %}><i class="far fa-address-card"></i></a>
+                    <h6>apply for leave</h6>
+                </div>
+            </div> -->
+            
+            <!--Exams Timetable-->
+            <!-- <div class="home-circle home-ExamsTimetable"> 
+                <div class="home-circle-inside">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+            </div> -->
+            
+            <!--Questionnaire--> 
+            <!-- {% url 'student_feedback' as student_feedback %}
+            <div class="home-circle home-Questionnaire">
+                <div class="home-circle-inside">
+                    <a href="{{student_feedback}}" {% if request.path == student_feedback %} active {% endif %}><i class="fas fa-question"></i></a>
+                </div>
+            </div> -->
+
+            <!--Books List-->
+            <!-- <div class="home-circle home-BooksList">
+                <div class="home-circle-inside">
+                    <i class="fas fa-book"></i>
+                </div>
+            </div> -->
+
+            <!--Desires-->
+            <!-- <div class="home-circle home-Desires">
+                <div class="home-circle-inside">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+            </div> -->
+            
+
+            
+            
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- {% url 'student_home' as student_home %}
+<a href="{{student_home}}" {% if request.path == add_student %} active {% endif %}> 
+    <p>Home</p>
+</a>
+
+{% url 'student_apply_leave' as student_apply_leave %}
+<a href="{{student_apply_leave}}" {% if request.path == student_apply_leave %} active {% endif %}> 
+    <p>Apply For Leave</p>
+</a>
+
+{% url 'student_feedback' as student_feedback %}
+<a href="{{student_feedback}}" {% if request.path == student_feedback %} active {% endif %}> 
+    <p>Feedback Message</p>
+</a> -->

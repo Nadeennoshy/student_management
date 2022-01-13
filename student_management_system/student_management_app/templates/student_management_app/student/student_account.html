@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Student Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}">  
+		<link href="{% static 'student_management_app/css/Account-style.css'%}" rel='stylesheet' />
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+		
+</head>
+<body class="Student-Account">
+  <!-- Hagar Aziz Abd El-Aziz Meazah -->
+  <div class="btn_back_home"><a href="{% url 'student_home' %}"><i class="fas fa-arrow-left"></i></a></div>
+  <div class="Account-Main">
+    <div class="Account-Form-Content">
+      <!-- Header -->
+      <div class="Account-header" >
+        <div class="Account-IMGcenter"><script  src="images/3.jpg"></script>
+        <div id="profile-container">
+        <image id="profileImage" src="{% static 'student_management_app/img/3.jpg'%}"  />
+        </div>
+        <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture></div>
+        <h1>Student Account</h1>
+      </div>
+
+      <!-- Registration Left Form -->
+      <ul class="Account-left-form">
+        <h2>Personal Details</h2>
+        <label class ="lab" for="studetn name">Student Name</label>   
+        <label style="padding-left: 15px;" for="student name">Bassel Aziz Abd El-Aziz Meaza</label>
+
+
+        <label class ="lab"  for="nationality">Nationality</label>
+        <label for="nationality">Egyption</label>
+        <div class="Account-clear"> </div>
+        
+        <label class ="lab"for="Religion">Religion</label>
+        <label style="padding-left: 15px;" for="Religion" >Muslim</label>
+        <div class="Account-clear"> </div>
+     
+        <label class ="lab"for="date of birth">Date Of Birth</label>
+        <label for="date of birth">27/07/2001</label>
+        <div class="Account-clear"> </div>
+
+        <label class ="lab"for="Student ID">Student ID</label>
+        <label class="l"for="Student ID">800167621</label>
+        <div class="Account-clear"> </div>
+            
+        <label class ="lab"for="National ID">National ID</label>
+        <label for="National ID">30107271185046</label>
+        <div class="Account-clear"> </div>
+
+        <label class="lab"  for="Gender">Gender</label>
+        <label style="padding-left: 15px;" for="Gender">Male</label>
+        <div class="Account-clear"></div>
+            
+        <br>				
+        <h2>Contact Details</h2>
+        
+        <label  class="lab" for="street">Street + Nr</label>
+        <label class="l" for="street">Damietta - Fareskur</label>
+        <div class="Account-clear"> </div>
+
+        <label class="lab" for="additonal info">Additional Info</label>
+        <div class="Account-clear"> </div>			
+                
+        <label class="lab" for="phone number"> Phone Number</label>
+        <label class="l" for="phone number">+201025491149</label>
+        <div class="Account-clear"> </div>
+
+        <label class="lab" for="email">Student Email</label>
+        <label class="l" for="email">basselaziz@gmail.com</label>
+        <div class="Account-clear"> </div>                                 
+      </ul>
+
+      <!-- Account Right Form -->
+      <ul class="Account-right-form">
+
+        <h2> Parents Detials</h2>
+        <label class="lab" for="Parent Name">Parent Name</label>
+        <label style="padding-left: 15px;" for="student name"> Aziz Abd El-Aziz Mahmoud Meaza</label>
+        <div class="Account-clear"> </div>
+
+        <label class ="lab" for="nationality">Nationality</label>
+        <label style="padding-left: 15px;" for="nationality">Egyption</label>
+        <div class="Account-clear"> </div>
+
+        <label class ="lab"for="Religion">Religion</label>
+        <label style="padding-left: 15px;" for="Religion" >Muslim</label>
+        <div class="Account-clear"> </div>
+        
+        <label class ="lab"for="date of birth">Date Of Birth</label>
+        <label for="date of birth">10/03/1972</label>
+        <div class="Account-clear"> </div>
+
+        <label class ="lab"for="Job">Job</label>
+        <label class="l" for="job">Engineer</label>
+        <div class="Account-clear"> </div>
+
+        <label class ="lab"for="National ID">National ID</label>
+        <label for="National ID">44103109608446</label>
+        <div class="Account-clear"> </div>
+
+      <label class ="lab"for="Gender">Gender</label>
+      <label style="padding-left: 15px;" for="Gender">Male</label>
+      <div class="Account-clear"></div>
+      <div class="Account-clear"> </div> 
+    </ul>
+    <div class="Account-clear"> </div>	
+    </div>
+   </div>
+</div>
+</body> 
+</html>

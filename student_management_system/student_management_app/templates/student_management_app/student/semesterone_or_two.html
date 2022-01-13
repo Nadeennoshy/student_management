@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}">  
+    <link rel="stylesheet" href="{% static 'student_management_app/css/semesteroneortwo.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+</head>
+<body>
+    <div class="semesteroneortwo_page_container">
+        <div class="btn_back_home"><a href="{% url 'academic_registration' %}"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="semesteroneortwo_page_content">
+            <h2>Semester</h2>
+            <label>Choose Semester One or Two</label>
+            <a href="{% url 'choose_courses' %}"><button>Semester One</button></a>
+            <a href="{% url 'choose_courses' %}"><button>Semester Two</button></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timetable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}"> 
+    <link rel="stylesheet" href="{% static 'student_management_app/css/studytime_table.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+</head>
+<body>
+    <div class="study_timetable_page_container">
+      <div class="btn_back_home"><a href="{% url 'student_home' %}"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="study_timetable_page_content">
+            <h2>Study Timetable</h2>
+            <table class="table" style="width:80%; margin: auto; color:#fff; text-align:center; margin-bottom: 3rem;">
+                <tr style="background: linear-gradient(
+                    90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%); color:#fff; padding-bottom:5%; font-family: 'Montserrat', sans-serif; height: 2rem;">
+                    <th>#</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td></td>
+                    <td colspan="2">Algorithms</td>
+                    <td colspan="2">Computer Graphics</td>
+                    <td colspan="2">Computer Organization and Architecture</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td></td>
+                    <td colspan="2">Algorithms Section</td>
+                    <td colspan="2">Information Security</td>
+                    <td colspan="2">Artificial Intelligence section</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td></td>
+                    <td colspan="2">Computer Organization and Alchitecture section</td>
+                    <td colspan="2">Information Security section</td>
+                    <td colspan="2">Computer graphics section</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td></td>
+                    <td colspan="2">Artificial Intelligence</td>
+                    <td colspan="2">Internet technology section</td>
+                    <td colspan="2">Internet technology</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+        </table>
+        </div>
+    </div>
+    
+</body>
+</html>

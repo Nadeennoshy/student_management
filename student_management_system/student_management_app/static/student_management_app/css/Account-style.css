@@ -1,0 +1,168 @@
+/* Hagar Aziz Abd El-Aziz Meaza */
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*font-family: 'Poppins', sans-serif;*/
+.Student-Account{
+	width: 100%;
+	height: 100%;
+	background-color: #f0edf1;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.btn_back_home{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient( 
+    90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #e3e3e4;
+    transition: all 0.4s ease;
+}
+
+.btn_back_home:hover{
+    background: #fff;
+}
+.btn_back_home:hover i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.btn_back_home a{
+    color: #fff;
+}
+/* Styling Image */
+#imageUpload
+{
+    display: none;
+}
+#profile-container {
+    width: 150px;
+    height: 150px;
+	cursor: pointer;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+	
+}
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+.Account-IMGcenter {
+	display: inline-block;margin-right:10px;;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;	
+}
+  /* Styling Heading */
+.Account-Main h2,.Account-main h3{
+	text-align:left;
+	font-size:17px;
+	font-weight:600;
+	margin:15px 3px;
+	color:rgb(67, 126, 235);
+	font-family: 'Montserrat', sans-serif;
+}
+.Account-header h1 {
+	color:rgb(67, 126, 235);
+	font-weight:700;
+	font-size:22px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Styling Main */
+.Account-Main{
+	width:auto;	
+}
+.Account-Form-Content ul{
+	list-style:none;
+	padding:0px;
+}
+
+/* Styling Student Registeration Form */
+.Account-Form-Content {
+	width: 1100px;
+	border-radius: 100px 20px 100px 20px;
+	box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+	margin: 8rem 0;
+}
+
+/* clear float */
+.Account-clear{
+	clear:both;
+}
+
+/* Styling Header */
+.Account-header {
+	text-align:center;
+	padding:1.3em;
+}
+/* Styling labels */
+.Account-left-form .lab{
+	padding:10px 30px;
+	font-family: 'Open Sans', sans-serif;  
+	display: inline-block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 110px;
+	border-radius:0.5em;
+	-webkit-border-radius:0.8em; 
+	-moz-border-radius:0.5em;
+	-o-border-radius:0.5em; 
+	color:rgb(35,35,35);
+	background:#fff; 
+	font-weight:bold; 
+	font-size:15px; 
+	outline:none; 
+	margin-top:15px;
+	cursor: auto;  
+}
+.Account-right-form .lab{
+	padding:10px 30px;
+	font-family: 'Poppins', sans-serif;
+	display: inline-block; margin-left: auto; 
+	margin-right: auto; 
+	width: 120px;
+	border-radius:0.5em;
+	-webkit-border-radius:0.8em; -moz-border-radius:0.5em;
+	-o-border-radius:0.5em; 
+	color:rgb(35,35,35);
+	background:#fff; 
+	font-weight:bold; 
+	font-size:15px; 
+	outline:none; margin-top:15px;  
+	cursor: auto; 
+}
+.Account-left-form label,
+.Account-right-form label{
+	color:rgb(35,35,35);
+	font-size:15px;
+	padding-left: 15px; 
+	cursor: auto;
+	font-family: 'Poppins', sans-serif;
+}
+/* Styling Left Form && Right Form */
+.Account-left-form,.Account-right-form{
+	float:left;
+	margin:22px 24px;
+	width:45%;
+}
+.Account-right-form{
+	float:right;
+}
+form{
+	padding-bottom: 2em;
+}
+

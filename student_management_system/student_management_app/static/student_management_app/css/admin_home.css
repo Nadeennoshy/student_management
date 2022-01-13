@@ -1,0 +1,310 @@
+/* #cfd9e0   */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.staffhome-container{
+    background-color:#f0edf1;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.staffhome-container a{
+    text-decoration: none;
+}
+/*staffhome-content*/
+.staffhome-content{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "area1 area2 area3"  
+                         "area4 area2 area5"
+                         "area6 area2 area7"
+                         "area8 area2 area9 "
+                         "area10 area2 area11 "
+                         "area13 area12 area14";
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    border-radius: 100px 20px 100px 20px;
+}
+/*Management*/
+.staffhome-circle-management{
+    width: 300px;
+    height: 300px;
+    border-radius:50%;
+    background-image:linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+/*box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15)
+                -6px -6px 10px -1px rgba(255,255,255,0.7);*/
+    grid-area: area2;            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 2.5rem;
+    box-shadow:8px 8px 8px #cbced1,-8px -8px 8px #fff;
+}
+.staffhome-management{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+/*staffhome-circle*/
+.staffhome-circle{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    /*background-image: linear-gradient(#2193b0,#6dd5ed);*/
+    background: linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow:8px 8px 8px #cbced1,-8px -8px 8px #e3e3e4;
+}
+/*staffhome-circle-inside*/
+/*.staffhome-circle-inside{
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    background-image:radial-gradient(circle,#0B335D,#01013f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.staffhome-content i{
+    font-size: 2rem;
+    color: #ffffff;
+}
+.staffhome_text{
+    color: rgb(35, 35, 35);
+    padding: 0 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.staffhome-AddStaff{
+    grid-area: area1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.staffhome-AddStaff .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-AddStaff .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-ManageStaff{
+    grid-area: area3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.staffhome-ManageStaff .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-ManageStaff .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-AddStudent{
+    grid-area: area4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.staffhome-AddStudent .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-AddStudent .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-ManageStudent{
+    grid-area: area5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.staffhome-ManageStudent .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-ManageStudent .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-AddCourse{
+    grid-area: area6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.staffhome-AddCourse .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-AddCourse .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-ManageCourse{
+    grid-area: area7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.staffhome-ManageCourse .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-ManageCourse  .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-AddSemester{
+    grid-area: area8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.staffhome-AddSemester .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-AddSemester .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-ManageSemester{
+    grid-area: area9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.staffhome-ManageSemester .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-ManageSemester .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-StudentLeave{
+    grid-area: area10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.staffhome-StudentLeave .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-StudentLeave .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-StaffLeave{
+    grid-area: area11;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.staffhome-StaffLeave .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-StaffLeave .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-StudentFeedback{
+    grid-area: area13;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.staffhome-StudentFeedback .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-StudentFeedback .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.staffhome-StaffFeedback{
+    grid-area: area14;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.staffhome-StaffFeedback .staffhome-circle:hover{
+    background: #fff;
+}
+.staffhome-StaffFeedback .staffhome-circle:hover .staffhome-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/*setting*/
+.staffhome-setting{
+    grid-area: area12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.staffhome-setting i{
+    font-size: 1rem;
+}
+.staffhome-setting-icons{
+    display: flex;
+}
+.staffhome-setting-icons i{
+    font-size:1rem;
+    padding: 0 1rem;
+    color:#fff;
+    background: linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 1rem;
+    box-shadow:8px 8px 8px #cbced1,-8px -8px 8px #e3e3e4;
+}
+.staffhome-setting-icons i:hover{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

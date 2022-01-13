@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.Add_Staff_Page_container{
+    width:100%;
+    height: 100%;
+    background-color:#f0edf1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.btn_back_home{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient( 
+    90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #e3e3e4;
+    transition: all 0.4s ease;
+}
+
+.btn_back_home:hover{
+    background: #fff;
+}
+.btn_back_home:hover i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+}
+.btn_back_home a{
+    color: #fff;
+}
+.Add_Staff_Page_content{
+    width: 60%;
+    height:70%;
+    border-radius: 100px 20px 100px 20px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Add_Staff_Page_content form{
+    width: 80%;
+    height: auto;
+}
+.Add_Staff_Page_content form .header{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(67, 126, 235);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.Add_Staff_Page_content form input{
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: 1rem auto;
+    width: 20rem;
+    height: 40px;
+    padding: 0 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: rgb(35, 35, 35);
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.Add_Staff_Page_content_btns{
+    display: flex;
+    justify-content: center;
+}
+.Add_Staff_Page_content form button{
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    background: rgb(67, 126, 235);
+    text-transform: capitalize;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+.Add_Staff_Page_content form button:hover{
+    background:#fff;
+    color:rgb(67, 126, 235);
+}
+
+
+

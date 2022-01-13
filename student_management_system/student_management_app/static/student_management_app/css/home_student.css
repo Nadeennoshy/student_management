@@ -1,0 +1,294 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.body{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+/* home-container*/
+.home-container{
+    background-color:#f0edf1;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.home-container a{
+    text-decoration: none;
+}
+/*home-content*/
+.home-content{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "area1 area2 area3"  
+                         "area4 area2 area5"
+                         "area6 area2 area7"
+                         "area8 area2 area9 "
+                         "area10 area12 area11 ";
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    border-radius: 100px 20px 100px 20px;
+}
+
+/*.home-circle-image*/
+.home-circle-image{
+    width: 300px;
+    height: 300px;
+    border-radius:50%;
+    background: linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+/*box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15)
+                -6px -6px 10px -1px rgba(255,255,255,0.7);*/
+    grid-area: area2;            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 1.5rem;
+    box-shadow:8px 8px 8px #cbced1,-8px -8px 8px #fff;
+}
+.home-image{
+    width:80%;
+    height:80%;
+}
+.home-image img{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+}
+/*home-circle*/
+.home-circle{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    /*background-image: linear-gradient(#2193b0,#6dd5ed);*/
+    background: linear-gradient(
+    90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    box-shadow:8px 8px 8px #cbced1,-8px -8px 8px #e3e3e4;
+}
+/*.home-circle-inside{
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    background-color:#f0edf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.home-content i{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.home_text{
+    color: rgb(35, 35, 35);
+    padding: 0 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.home-PersonalData{
+    grid-area: area1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.home-PersonalData .home-circle:hover{
+    background: #fff;
+}
+.home-PersonalData .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-CoursesGrades{
+    grid-area: area4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.home-CoursesGrades .home-circle:hover{
+    background: #fff;
+}
+.home-CoursesGrades  .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-StudyTimetable{
+    grid-area: area6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.home-StudyTimetable .home-circle:hover{
+    background: #fff;
+}
+.home-StudyTimetable  .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-UniversityMail{
+    grid-area: area8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.home-UniversityMail .home-circle:hover{
+    background: #fff;
+}
+.home-UniversityMail  .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-AcademicRegistration{
+    grid-area: area10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.home-AcademicRegistration .home-circle:hover{
+    background: #fff;
+}
+.home-AcademicRegistration  .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-IdentityCards{
+    grid-area: area3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-IdentityCards .home-circle:hover{
+    background: #fff;
+}
+.home-IdentityCards  .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-ExamsTimetable{
+    grid-area: area5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-ExamsTimetable .home-circle:hover{
+    background: #fff;
+}
+.home-ExamsTimetable  .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-Questionnaire{
+    grid-area: area7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-Questionnaire .home-circle:hover{
+    background: #fff;
+}
+.home-Questionnaire  .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-BooksList{
+    grid-area: area9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-BooksList .home-circle:hover{
+    background: #fff;
+}
+.home-BooksList  .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-Desires{
+    grid-area: area11;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-Desires .home-circle:hover{
+    background: #fff;
+}
+.home-Desires  .home-circle:hover .home-circle-inside i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.home-setting{
+    grid-area: area12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-setting i{
+    font-size: 1rem;
+}
+.home-setting-h3{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(67, 126, 235);
+    margin-top: 0.5rem;
+}
+.home-setting-icons{
+    display: flex;
+}
+.home-setting-icons i{
+    font-size:1rem;
+    padding: 0 1rem;
+    color:#fff;
+    background: linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 1rem 0 1rem;
+    box-shadow:8px 8px 8px #cbced1,-8px -8px 8px #e3e3e4;
+}
+.home-setting-icons i:hover{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}

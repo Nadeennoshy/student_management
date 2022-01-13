@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exams Timetable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}"> 
+    <link rel="stylesheet" href="{% static 'student_management_app/css/examstimetable.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}"><link rel="shortcut icon" type="image/png" href="brain.png">
+</head>
+<body>
+    <div class="exams_timetable_page_container">
+      <div class="btn_back_home"><a href="{% url 'student_home' %}"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="exams_timetable_page_content">
+            <h2>Exams Timetable</h2>
+            <table class="table" style="width:80%; margin: auto; color:#fff; text-align:center; margin-bottom: 3rem;">
+                <tr style="background: linear-gradient(
+                    90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%); color:#fff; padding-bottom:5%; font-family: 'Montserrat', sans-serif; height: 2rem;">
+                    <th>Date</th>
+                    <th>Course</th>
+                    <th>Time</th>
+                    <th>Committee</th>
+                    <th>Committee Place</th>
+                    <th>Seat No.</th>
+                </tr>
+                <tr>
+                    <td>16/01/2022</td>
+                    <td>Algorithms</td>
+                    <td>13:00 - 15:00</td>
+                    <td>3</td>
+                    <td>104B</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <td>18/01/2022</td>
+                    <td>Computer Graphics</td>
+                    <td>13:00 - 15:00</td>
+                    <td>3</td>
+                    <td>104B</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <td>20/01/2022</td>
+                    <td>Computer Organization and Architecture</td>
+                    <td>13:00 - 15:00</td>
+                    <td>3</td>
+                    <td>104B</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <td>23/01/2022</td>
+                    <td>Artificial Intelligence</td>
+                    <td>13:00 - 15:00</td>
+                    <td>3</td>
+                    <td>104B</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <td>25/01/2022</td>
+                    <td>Internet technology</td>
+                    <td>13:00 - 15:00</td>
+                    <td>3</td>
+                    <td>104B</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <td>29/01/2022</td>
+                    <td>Information Security</td>
+                    <td>13:00 - 15:00</td>
+                    <td>3</td>
+                    <td>104B</td>
+                    <td>101</td>
+                </tr>
+        </table>
+        </div>
+    </div>
+</body>
+</html>

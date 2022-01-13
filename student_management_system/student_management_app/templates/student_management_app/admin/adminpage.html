@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}">
+    <link rel="stylesheet" href="{% static 'student_management_app/css/admin_home.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+</head>
+<body>
+    <div class="staffhome-container">
+        <div class="staffhome-content">
+
+            <!--Management-->
+            <div class="staffhome-circle-management">
+                <div class="staffhome-circle-inside">
+                    <div class="staffhome-management">
+                        <h4>Management</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!--setting-->
+            <div class="staffhome-setting">
+                <div class="staffhome-setting-icons">
+                    <div class="staffhome-setting-icons-icon"><a href="{% url 'logout' %}"><i class="fas fa-power-off"></i></a></div>
+                    <div class="staffhome-setting-icons-icon"><a href="#"><i class="fas fa-key"></i></a></div>
+                </div>
+            </div>
+
+            <!--Add Staff-->
+            <div class="staffhome-AddStaff">
+                <div class="staffhome_text">Add Staff</div>
+                <a href="{% url 'add_staff' %}">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Manage Staff-->
+            <div class="staffhome-ManageStaff">
+                <a href="{% url 'manage_staff' %}">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="staffhome_text">Manage Staff</div>
+            </div>
+
+            <!--Add Student-->
+            <div class="staffhome-AddStudent">
+                <div class="staffhome_text">Add Student</div>
+                <a href="{% url 'add_student' %}">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Manage Student-->
+            <div class="staffhome-ManageStudent">
+                <a href="{% url 'manage_student' %}">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="staffhome_text">Manage Student</div>
+            </div>
+
+
+            <!--Add Semester-->
+            <div class="staffhome-AddCourse">
+                <div class="staffhome_text">Add Semester</div>
+                <a href="{% url 'add_semester' %}">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-calendar-plus"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Manage Semester-->
+            <div class="staffhome-ManageCourse">
+                <a href="{% url 'manage_semester' %}" >
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-calendar-minus"></i> 
+                        </div>
+                    </div>
+                </a>
+                <div class="staffhome_text">Manage Semester</div>
+            </div>
+
+              <!-- Add Course -->
+            <div class="staffhome-AddSemester">
+                <div class="staffhome_text">Add Course</div>
+                <a href="{% url 'add_course' %}">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <!--Manage Course-->
+            <div class="staffhome-ManageSemester">
+                <a href="{% url 'manage_course' %}">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="staffhome_text">Manage Course</div>
+            </div>
+
+            <!--Student Leave-->
+            <div class="staffhome-StudentLeave">
+                <div class="staffhome_text">Student Leave</div>
+                <a href="#">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-user-slash"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Session Year-->
+            <div class="staffhome-StaffLeave">
+                <a href="#" >
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-table"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="staffhome_text">Manage Session</div>
+            </div>       
+
+            <!--Student Feedback-->
+            <div class="staffhome-StudentFeedback">
+                <div class="staffhome_text">Student Feedback</div>
+                <a href="#">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-thumbs-up"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>    
+
+            <!--Staff Feedback-->
+            <div class="staffhome-StaffFeedback">
+                <a href="#">
+                    <div class="staffhome-circle"> 
+                        <div class="staffhome-circle-inside">
+                            <i class="fas fa-thumbs-up"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="staffhome_text">Staff Feedback</div>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

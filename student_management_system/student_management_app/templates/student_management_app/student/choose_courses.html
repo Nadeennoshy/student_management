@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Courses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}"> 
+    <link rel="stylesheet" href="{% static 'student_management_app/css/choose courses.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+</head>
+<body>
+    <div class="choose_course_page_container">
+        <div class="btn_back_home"><a href="{% url 'semestetone_or_two' %}"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="choose_course_page_content">
+            <h2>Choose Courses</h2>
+            <label>Choose your Courses</label>
+            <form>
+                <div class="form_contanier">
+                    <div class="choose_course_leftpart">
+                        <input type="checkbox">
+                        <label>Information and network security</label><br>
+                        <input type="checkbox">
+                        <label>Internet technology</label><br>
+                        <input type="checkbox">
+                        <label>Computer Organization and Architecture</label><br>
+                        <input type="checkbox">
+                        <label>Computer graphics</label><br>
+                        <input type="checkbox">
+                        <label>Artificial Intelligence</label><br>
+                        <input type="checkbox">
+                        <label>Algorithms</label><br>
+                    </div>
+                    <div class="choose_course_rightpart">
+                        <input type="checkbox">
+                        <label>Software engineering 2</label><br>
+                        <input type="checkbox">
+                        <label>Digital signal processing</label><br>
+                        <input type="checkbox">
+                        <label>Operating system 2</label><br>
+                        <input type="checkbox">
+                        <label>Computer language concepts</label><br>
+                        <input type="checkbox">
+                        <label>Computer confrontations</label><br>
+                        <input type="checkbox">
+                        <label>Training field</label><br>
+                    </div>
+                </div>
+
+                <input type="submit" value="Save" class="btn-save">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

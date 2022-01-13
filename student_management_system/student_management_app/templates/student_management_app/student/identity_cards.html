@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}"> 
+    <link rel="stylesheet" href="{% static 'student_management_app/css/identitycards.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+</head>
+<body>
+    <div class="identity_cards_page_container">
+        <div class="btn_back_home"><a href="{% url 'student_home' %}"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="identity_cards_page_content"> 
+            <h2>Identity Cards</h2>
+            <table class="table" style="width:80%; margin: auto; color:#fff; text-align:center; margin-bottom: 3rem;">
+                <thead>
+                    <tr style="background: linear-gradient(
+                        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%); color:#fff; padding-bottom:5%; font-family: 'Montserrat', sans-serif; height: 2rem;">
+                    <th scope="col">Academic Year</th>
+                    <th scope="col">Print Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #fff;color: rgb(35, 35, 35);">
+                        <td>2021-2022</td>
+                        <td>23/11/2021</td>
+                    </tr>
+                    <tr style="background-color: #fff;color: rgb(35, 35, 35);">
+                        <td>2020-2021</td>
+                        <td>21/01/2021</td>
+                    </tr>
+                    <tr style="background-color: #fff;color: rgb(35, 35, 35);">
+                        <td>2019-2020</td>
+                        <td>24/12/2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

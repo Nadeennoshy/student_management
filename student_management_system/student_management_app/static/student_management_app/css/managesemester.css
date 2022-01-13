@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+}
+.managesemester_Page_container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0edf1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.managesemester_Page_container h2{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(67, 126, 235);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.btn_back_home{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient( 
+    90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #e3e3e4;
+    transition: all 0.4s ease;
+}
+
+.btn_back_home:hover{
+    background: #fff;
+}
+.btn_back_home:hover i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.btn_back_home a{
+    color: #fff;
+}
+.managesemester_Page_content{
+    width: 80%;
+    height: auto;
+    border-radius: 100px 20px 100px 20px;
+        box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+.managesemester_Page_content table button{
+    border-radius: 5px;
+    background-color: rgb(67, 126, 235);
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 160px;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 8px 8px 8px #e7e7e9, -8px -8px 8px #e7e7e9;
+}
+.managesemester_Page_content table button:hover{
+    color:rgb(67, 126, 235); 
+    background: #fff;
+}

@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.choose_course_page_container{
+    width:100vw;
+    height: 100vh;
+    background-color:#f0edf1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.btn_back_home{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient( 
+    90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #e3e3e4;
+    transition: all 0.4s ease;
+}
+.btn_back_home:hover{
+    background: #fff;
+}
+.btn_back_home:hover i{
+    background: -webkit-linear-gradient(
+        90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.btn_back_home a{
+    color: #fff;
+}
+.choose_course_page_content{
+    width: 60%;
+    height:70%;
+    border-radius: 100px 20px 100px 20px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choose_course_page_content h2{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(67, 126, 235);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 5rem; 
+}
+.choose_course_page_content label{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(35, 35, 35);
+    margin: 0.5rem 0 1.5rem 0;
+    font-weight: 500;
+}
+.choose_course_page_content form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choose_course_page_content .form_contanier{
+    width: 100%;
+    display: flex;
+}
+.choose_course_page_content form label{
+    font-size: 0.9rem;
+}
+.choose_course_page_content form .choose_course_leftpart {
+    width: 80%;
+}
+.choose_course_page_content form .choose_course_leftpart input{
+    margin: 0.7rem 0;
+}
+.choose_course_page_content form .choose_course_rightpart {
+    width: 80%;
+}
+.choose_course_page_content form .choose_course_rightpart input{
+    margin: 0.7rem 0;
+}
+.choose_course_page_content form .btn-save{
+    font-family: 'Poppins', sans-serif;
+    width: 20rem;
+    height: 40px;
+    color: #fff;
+    border: none;
+    background: rgb(67, 126, 235);
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    margin-top: 1.5rem;
+}
+.choose_course_page_content form .btn-save:hover{
+    background: #fff;
+    color: rgb(67, 126, 235);
+}

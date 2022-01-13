@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'student_management_app/fontawesome-free-5.15.4-web/css/all.css '%}"> 
+    <link rel="stylesheet" href="{% static 'student_management_app/css/edit_course.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'student_management_app/img/brain.png'%}">
+</head>
+<body>
+    <div class="EditCourse_Page_container">
+        <div class="btn_back_home"><a href="{% url 'admin_home' %}"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="EditCourse_Page_container_content">
+            <form action = "/add_course_save" method="post">
+                {% csrf_token %}
+                <h2>Add Course</h2>
+                <input type="text" name="course_name" placeholder="Course Name">
+                <select name="semester">
+                    {% for semester in semesters %}
+                        <option value="{{semester.id}}">{{semester.semester_name}}</option>
+                     {% endfor %}
+                </select>
+                <select name="staff">
+                    {% for staff in staffs%}
+                        <option value="{{staff.id}}">{{staff.first_name}} {{staff.last_name}}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit">Add Course</button>
+            </div>
+            {% if messages%}
+            {% for message in messages %}
+            {% if message.tags == 'error' %}	
+            <div style="position: absolute; top: 60px;color: rgb(67, 126, 235); font-family: 'Poppins', sans-serif;">{{message}}</div>	
+            {% endif %}
+            {% if message.tags == 'success' %}
+            <div style="position: absolute; top: 60px;color: rgb(67, 126, 235); font-family: 'Poppins', sans-serif;">{{message}}</div>
+            {% endif %}	
+            {% endfor %}
+            {% endif %}
+            </form>    
+    </div>
+</body>
+</html>
